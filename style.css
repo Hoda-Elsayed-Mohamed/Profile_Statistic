@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: cursive;
+}
+.container{
+    display: flex;
+}
+.container>div{
+    border: 3px green dotted;
+    margin: 20px;
+    min-width: 250px;
+    text-align: center;
+    height: auto;
+
+}
+.container>div>i{
+margin-top: -25px;
+}
+h2{
+    font-size: 50px;
+    color: green;
+    margin: 5px;
+    transition: all 0.5s;
+}
+p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+   .container{
+    flex-direction: column;
+   }
+}
